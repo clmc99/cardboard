@@ -1524,10 +1524,7 @@ class CraftMetaItem implements ItemMeta, Damageable, Repairable, BlockDataMeta {
             itemTag.put(CraftMetaItem.EQUIPPABLE, this.equippable.getHandle());
         }
 
-        if (this.hasDamage()) {
-            itemTag.put(CraftMetaItem.DAMAGE, this.damage);
-        }
-        
+
         if (this.hasDamageValue()) { // Paper - preserve empty/0 damage
             itemTag.put(CraftMetaItem.DAMAGE, this.damage);
         }
