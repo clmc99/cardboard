@@ -121,6 +121,8 @@ public class PluginClassLoader extends URLClassLoader {
         return findResources(name);
     }
 
+    public JavaPlugin getPlugin() { return plugin; }
+
     @Override
     protected Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
         return loadClass0(name, resolve, true, true);
