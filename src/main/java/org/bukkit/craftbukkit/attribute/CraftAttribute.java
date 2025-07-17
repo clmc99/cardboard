@@ -93,9 +93,8 @@ public class CraftAttribute implements Attribute, Handleable<net.minecraft.entit
         return this.key;
     }
 
-    @NotNull
     @Override
-    public String getTranslationKey() {
+    public @NotNull String getTranslationKey() {
         return this.attributeBase.getTranslationKey();
     }
 
@@ -109,9 +108,8 @@ public class CraftAttribute implements Attribute, Handleable<net.minecraft.entit
         return this.ordinal - attribute.ordinal();
     }
 
-    @NotNull
     @Override
-    public String name() {
+    public @NotNull String name() {
         return this.name;
     }
 
